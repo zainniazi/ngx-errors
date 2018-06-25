@@ -1,14 +1,14 @@
 {
-  "name": "@ultimate/ngxerrors",
-  "version": "0.0.0",
+  "name": "@hackages/ngxerrors",
+  "version": "6.0.0",
   "description": "A declarative validation module for reactive forms",
-  "main": "bundle/ultimate.ngxerrors.umd.js",
+  "main": "bundle/hackages.ngxerrors.umd.js",
   "module": "index.js",
   "types": "index.d.ts",
-  "author": "Ultimate Angular",
+  "author": "Hackages",
   "license": "MIT",
   "repository": {
-    "url": "https://github.com/UltimateAngular/ngxerrors.git",
+    "url": "https://github.com/hackages/ngx-errors.git",
     "type": "git"
   },
   "peerDependencies": {
