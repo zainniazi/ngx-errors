@@ -1,6 +1,6 @@
 {
   "name": "@hackages/ngxerrors",
-  "version": "6.0.0",
+  "version": "6.0.2",
   "description": "A declarative validation module for reactive forms forked from UltimateAngular/ngx-errors",
   "author": "Hackages",
   "license": "MIT",

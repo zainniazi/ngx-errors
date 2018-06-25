@@ -1,6 +1,6 @@
+A forked version of @ultimate/ngxerrors with angular 6.0.3
+
 [![Build Status][circle-badge]][circle-badge-url]
-[![Dependency Status][david-badge]][david-badge-url]
-[![devDependency Status][david-dev-badge]][david-dev-badge-url]
 [![npm][npm-badge]][npm-badge-url]
 
 <h1 align="center">
@@ -365,14 +365,10 @@ The `errors` property returns the object associated with any active errors. This
 
 > The errors returned are identical to Angular's FormControl API
 
-[circle-badge]: https://circleci.com/gh/UltimateAngular/ngxerrors.svg?style=shield
-[circle-badge-url]: https://circleci.com/gh/UltimateAngular/ngxerrors
-[david-badge]: https://david-dm.org/UltimateAngular/ngxerrors.svg
-[david-badge-url]: https://david-dm.org/UltimateAngular/ngxerrors
-[david-dev-badge]: https://david-dm.org/UltimateAngular/ngxerrors/dev-status.svg
-[david-dev-badge-url]: https://david-dm.org/UltimateAngular/ngxerrors?type=dev
-[npm-badge]: https://img.shields.io/npm/v/@ultimate/ngxerrors.svg
-[npm-badge-url]: https://www.npmjs.com/package/@ultimate/ngxerrors
+[circle-badge]: https://circleci.com/gh/hackages/ngx-errors.svg?style=shield
+[circle-badge-url]: https://circleci.com/gh/hackages/ngx-errors
+[npm-badge]: https://img.shields.io/npm/v/@hackages/ngxerrors.svg
+[npm-badge-url]: https://www.npmjs.com/package/@hackages/ngxerrors
 
 # Contributing
 
