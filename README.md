@@ -67,11 +67,11 @@ Check out the documentation below for all the syntax we provide.
 ### Installation
 
 ```bash
-yarn add @ultimate/ngxerrors
+yarn add @hackages/ngxerrors
 
 # OR
 
-npm i @ultimate/ngxerrors
+npm i @hackages/ngxerrors
 ```
 
 ### Setup
@@ -79,7 +79,7 @@ npm i @ultimate/ngxerrors
 Just add ngx-errors to your module:
 
 ```js
-import { NgxErrorsModule } from '@ultimate/ngxerrors';
+import { NgxErrorsModule } from '@hackages/ngxerrors';
 
 @NgModule({ imports: [ NgxErrorsModule ] })
 ```
