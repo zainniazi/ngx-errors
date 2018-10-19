@@ -8,11 +8,11 @@ import {
   OnDestroy,
   OnInit
 } from '@angular/core';
-import {combineLatest, Observable, Subject, Subscription} from 'rxjs';
-import {distinctUntilChanged, filter, map} from 'rxjs/operators';
-import {ErrorOptions} from './ngxerrors';
-import {NgxErrorsDirective} from './ngxerrors.directive';
-import {toArray} from './utils/toArray';
+import { combineLatest, Observable, Subject, Subscription } from 'rxjs';
+import { distinctUntilChanged, filter, map } from 'rxjs/operators';
+import { ErrorOptions } from './ngxerrors';
+import { NgxErrorsDirective } from './ngxerrors.directive';
+import { toArray } from './utils/toArray';
 
 @Directive({
   selector: '[ngxError]'
@@ -28,7 +28,7 @@ export class NgxErrorDirective implements OnInit, OnDestroy, DoCheck {
     this.rules = toArray(value);
   }
 
-  @HostBinding('hidden') private hidden: boolean = true;
+  @HostBinding('hidden') public hidden: boolean = true;
 
   private rules: string[] = [];
   private errorNames: string[] = [];
@@ -39,7 +39,7 @@ export class NgxErrorDirective implements OnInit, OnDestroy, DoCheck {
   constructor(
     @Inject(forwardRef(() => NgxErrorsDirective))
     private ngxErrors: NgxErrorsDirective
-  ) {}
+  ) { }
 
   ngOnInit() {
     this._states$ = new Subject<string[]>();
