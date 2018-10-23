@@ -1,6 +1,6 @@
 {
   "name": "@hackages/ngxerrors",
-  "version": "6.0.4",
+  "version": "7.0.0",
   "description": "A declarative validation module for reactive forms",
   "main": "bundle/hackages.ngxerrors.umd.js",
   "module": "index.js",
@@ -12,6 +12,6 @@
     "type": "git"
   },
   "peerDependencies": {
-    "@angular/forms": "^6.0.3"
+    "@angular/forms": "^7.0.0"
   }
 }
