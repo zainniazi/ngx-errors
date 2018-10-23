@@ -1,7 +1,7 @@
-import { Component, Input, Output, EventEmitter } from '@angular/core';
-import { FormGroup, FormArray } from '@angular/forms';
+import {Component, Input, Output, EventEmitter} from '@angular/core';
+import {FormGroup, FormArray} from '@angular/forms';
 
-import { Product } from '../../models/product.interface';
+import {Product} from '../../models/product.interface';
 
 @Component({
   selector: 'stock-products',
@@ -11,21 +11,21 @@ import { Product } from '../../models/product.interface';
       <div formArrayName="stock">
         <div
           *ngFor="let item of stocks; let i = index;">
-          
+
           <div class="stock-product__content" [formGroupName]="i">
             <div class="stock-product__name">
               {{ getProduct(item.value.product_id).name }}
             </div>
             <div class="stock-product__price">
-              {{ getProduct(item.value.product_id).price | currency:'USD':true }}
+              {{ getProduct(item.value.product_id).price | currency:'USD' }}
             </div>
-            <input 
+            <input
               type="number"
               step="10"
               min="10"
               max="1000"
               formControlName="quantity">
-            <button 
+            <button
               type="button"
               (click)="onRemove(item, i)">
               Remove
@@ -52,11 +52,10 @@ export class StockProductsComponent {
   }
 
   onRemove(group, index) {
-    this.removed.emit({ group, index });
+    this.removed.emit({group, index});
   }
 
   get stocks() {
     return (this.parent.get('stock') as FormArray).controls;
   }
-
 }
