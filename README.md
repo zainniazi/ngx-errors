@@ -1,4 +1,4 @@
-A forked version of @ultimate/ngxerrors with angular 6.0.3
+A forked version of @ultimate/ngxerrors with angular 8.0.0
 
 [![Build Status][circle-badge]][circle-badge-url]
 [![npm][npm-badge]][npm-badge-url]
