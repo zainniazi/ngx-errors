@@ -1,6 +1,5 @@
 const path = require('path');
 const webpack = require('webpack');
-const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 
 const plugins = [
   new webpack.DefinePlugin({
@@ -99,16 +98,6 @@ module.exports = {
     children: true
   },
   optimization: {
-    minimizer: [
-      new UglifyJsPlugin({
-        sourceMap: true,
-        uglifyOptions: {
-          compress: {
-            inline: false
-          }
-        }
-      })
-    ],
     splitChunks: {
       cacheGroups: {
         vendor: {
