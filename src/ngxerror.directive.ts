@@ -47,7 +47,7 @@ export class NgxErrorDirective implements OnInit, OnDestroy, DoCheck {
 
     const errors = this.ngxErrors.subject$.pipe(
       filter(Boolean),
-      filter(obj => !!~this.errorNames.indexOf(obj.errorName))
+      filter((obj: any) => !!~this.errorNames.indexOf(obj.errorName))
     );
 
     const states = this.states$.pipe(
